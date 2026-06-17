@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <a href=""><img src="" alt="KARO Studio logo"></a>
+        <a href=""><img class="header__logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.png' ?>" alt="KARO Studio logo"></a>
         <nav class="navigation">
             <ul>
                 <li><a href="">Home</a></li>
@@ -24,6 +24,11 @@
                 <li><a href="">Kontakt</a></li>
             </ul>
         </nav>
+        <button class="header__hamburger">
+            <span class="header__line"></span>
+            <span class="header__line"></span>
+            <span class="header__line"></span>
+        </button>
     </header>
     <main>
         <section class="hero hero--home">
