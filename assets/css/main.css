@@ -29,3 +29,31 @@ header {
     height: 1.5px;
     width: 3rem;
 }
+
+.navigation {
+    display: none;
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    background-color: #e2dcd1;
+    padding: 10px;
+    
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color:#2A2117;
+}
