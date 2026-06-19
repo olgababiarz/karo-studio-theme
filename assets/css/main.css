@@ -13,9 +13,76 @@
     padding: 0;
 }
 
+body {
+    background-color: var(--tlo-glowne);
+    font-family: var(--font-tekst);
+    color: var(--tekst-glowny);
+}
+
+h1 {
+    font-family: var(--font-naglowki);
+    font-style: normal;
+    font-size: 3.5rem;
+    font-weight: 200;
+    color: var(--tekst-glowny);
+}
+
+h2 {
+    font-family: var(--font-naglowki);
+    font-style: normal;
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: var(--tekst-glowny);
+}
+
+h3 {
+    font-family: var(--font-naglowki);
+    font-style: normal;
+    font-size: 2rem;
+    font-weight: 200;
+    color: var(--tekst-glowny);
+}
+
+h1 em, h2 em {
+    font-style: italic;
+    color: var(--kolor-akcent);
+}
+
+.eyebrow {
+    font-family: var(--font-tekst);
+    font-style: normal;
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: var(--kolor-akcent);
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+p {
+    font-family: var(--font-tekst);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.85rem;
+    line-height: 1.9;
+    color: var(--tekst-glowny);
+}
+
+a {
+    font-family: var(--font-tekst);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    text-decoration: none;
+    color: var(--tekst-glowny);
+}
+
+button {
+    border: 1px solid var(--kolor-akcent);
+    background-color: transparent;
+}
 
 header {
-    background-color: #e2dcd1;
+    background-color: var(--tlo-glowne);
     height: 4rem;
     display: flex;
     justify-content: space-between;
