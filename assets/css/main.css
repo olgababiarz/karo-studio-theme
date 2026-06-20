@@ -144,6 +144,31 @@ header {
 .hero--home {
     background-image: url('../images/tlo-hero-home.png');
     background-size: cover;
-    background-position: left;
-    height: 90vh;
+    background-position: 20% center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem; 
+    gap: 20px;
+}
+
+.hero__name {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+
+.hero__title {
+    font-family: var(--font-tekst);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.hero__description {
+    font-family: var(--font-naglowki);
+    font-style: italic;
+    font-size: 1rem;
 }
