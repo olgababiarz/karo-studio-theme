@@ -12,3 +12,10 @@ function karo_enqueue_scripts(){
 }
 
 add_action ('wp_enqueue_scripts', 'karo_enqueue_scripts');
+
+function karo_register_menus() {
+    register_nav_menus([
+        'primary' => 'Menu główne'
+    ]);
+}
+add_action('init', 'karo_register_menus');
