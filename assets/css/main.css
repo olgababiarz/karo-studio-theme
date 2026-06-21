@@ -59,6 +59,16 @@ h1 em, h2 em {
     letter-spacing: 0.25em;
 }
 
+.eyebrow::before {
+        content: '';
+        display: inline-block;
+        height: 1px;
+        width: 20px;
+        background-color: var(--kolor-akcent);
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
 p {
     font-family: var(--font-tekst);
     font-style: normal;
