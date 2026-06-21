@@ -195,10 +195,6 @@ header {
         gap: 30px;
     } 
 
-    .navigation ul li a:hover {
-        color: var(--kolor-akcent);
-    }
-    
     .navigation ul li a::before {
         content: '';
         display: inline-block;
@@ -209,7 +205,25 @@ header {
         vertical-align: middle;
     }
 
-    .navigation ul li.active a::before {
+    .navigation ul li.current-menu-item a::before {
         width: 30px;
+        background-color: var(--kolor-akcent);
+    }
+
+    .navigation ul li.current-menu-item a {
+        color: var(--kolor-akcent);
+    }
+
+    .navigation ul li a:hover  {
+        color: var(--kolor-akcent);
+        
+    }
+
+    .navigation ul li a:hover::before {
+        background-color: var(--kolor-akcent);
+    }
+
+    .hero--home {
+        height: 100vh;
     }
 }
