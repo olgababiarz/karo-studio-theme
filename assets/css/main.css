@@ -237,3 +237,32 @@ header {
         height: 100vh;
     }
 }
+
+.o-mnie__zdjecie {
+    width: 100%;
+}
+
+.o-mnie__tekst {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.o-mnie__box-liczby {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.o-mnie__liczba {
+    display: inline-block;
+    width: 30%; 
+    border-right: 1px solid var(--tekst-glowny);
+}
+
+.o-mnie__liczba:last-child {
+    border-right: none;
+}

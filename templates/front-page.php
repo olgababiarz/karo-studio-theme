@@ -34,16 +34,18 @@
             <p class="hero__description">Wnętrza projektowane raz. Na zawsze.</p>
         </section>
         <section class="o-mnie">
-            <img class="o-mnie__zdjecie" src="" alt="">
+            <img class="o-mnie__zdjecie" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/k-rozbicka-o-mnie.png' ?>" alt="">
             <div class="o-mnie__tekst">
                 <p class="eyebrow">O mnie</p>
                 <h2>Katarzyna <em>Rozbicka</em></h2>
                 <p class="o-mnie__opis">Od ponad 10 lat tworzę przestrzenie, które stają się naturalnym przedłużeniem osobowości ich właścicieli. Nie interesuje mnie powtarzalność ani ślepe podążanie za trendami — każdy projekt zaczynam od rozmowy, bo tylko tak można stworzyć wnętrze, które naprawdę trwa.</p>
                 <p class="o-mnie__opis">Pracuję kompleksowo — od pierwszego szkicu po nadzór nad realizacją. Moim klientom zapewniam spokój i pewność, że każdy etap jest pod kontrolą.</p>
-                <p class="o-mnie-liczby">10+ lat praktyki</p>
-                <p class="o-mnie-liczby">60+ zrealizowanych wnętrz</p>
-                <p class="o-mnie-liczby">100% autorski nadzór</p>
-                <a href="">Umów rozmowę</a>
+                <div class="o-mnie__box-liczby">
+                    <p class="o-mnie__liczba">10+ lat praktyki</p>
+                    <p class="o-mnie__liczba">60+ zrealizowanych wnętrz</p>
+                    <p class="o-mnie__liczba">100% autorski nadzór</p>
+                </div>
+                <a href="">Więcej o mnie</a>
             </div>
         </section>
         <section class="realizacje"></section>
