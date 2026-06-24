@@ -78,13 +78,26 @@ p {
     color: var(--tekst-glowny);
 }
 
-a {
+a, .link-akcja {
     font-family: var(--font-tekst);
     font-weight: 400;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.18em;
     text-decoration: none;
     color: var(--tekst-glowny);
+}
+
+.link-akcja::after {
+    content: ' →';
+}
+
+.link-akcja--btn {
+    border: 1px solid var(--kolor-akcent);
+    background-color: transparent;
+    padding: 10px;
+    
+    align-self: flex-start;
 }
 
 button {
@@ -253,16 +266,20 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 10px;
 }
 
 .o-mnie__liczba {
     display: inline-block;
-    width: 30%; 
-    border-right: 1px solid var(--tekst-glowny);
+    flex: 1;
 }
 
-.o-mnie__liczba:last-child {
-    border-right: none;
+.o-mnie__divider {
+    width: 1px;
+    background-color: var(--tekst-glowny);
+    align-self: stretch;
+}
+
+.o-mnie__tekst a {
+    margin-top: 10px;
 }

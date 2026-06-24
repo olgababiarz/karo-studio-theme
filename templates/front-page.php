@@ -41,11 +41,22 @@
                 <p class="o-mnie__opis">Od ponad 10 lat tworzę przestrzenie, które stają się naturalnym przedłużeniem osobowości ich właścicieli. Nie interesuje mnie powtarzalność ani ślepe podążanie za trendami — każdy projekt zaczynam od rozmowy, bo tylko tak można stworzyć wnętrze, które naprawdę trwa.</p>
                 <p class="o-mnie__opis">Pracuję kompleksowo — od pierwszego szkicu po nadzór nad realizacją. Moim klientom zapewniam spokój i pewność, że każdy etap jest pod kontrolą.</p>
                 <div class="o-mnie__box-liczby">
-                    <p class="o-mnie__liczba">10+ lat praktyki</p>
-                    <p class="o-mnie__liczba">60+ zrealizowanych wnętrz</p>
-                    <p class="o-mnie__liczba">100% autorski nadzór</p>
+                    <p class="o-mnie__liczba">
+                        <span class="o-mnie__liczba-wartosc" data-target="10">0</span>+ 
+                        <span class="o-mnie__liczba-opis">lat praktyki</span>
+                    </p>
+                    <div class="o-mnie__divider"></div>
+                    <p class="o-mnie__liczba">
+                        <span class="o-mnie__liczba-wartosc" data-target="60">0</span>+ 
+                        <span class="o-mnie__liczba-opis">zrealizowanych wnętrz</span>
+                    </p>
+                    <div class="o-mnie__divider"></div>
+                    <p class="o-mnie__liczba">
+                        <span class="o-mnie__liczba-wartosc" data-target="100">0</span>% 
+                        <span class="o-mnie__liczba-opis">autorski nadzór</span>
+                    </p>
                 </div>
-                <a href="">Więcej o mnie</a>
+                <a class="link-akcja link-akcja--btn" href="">Więcej o mnie</a>
             </div>
         </section>
         <section class="realizacje"></section>
