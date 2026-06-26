@@ -59,7 +59,21 @@
                 <a class="link-akcja link-akcja--btn" href="">Więcej o mnie</a>
             </div>
         </section>
-        <section class="realizacje"></section>
+        <section class="realizacje">
+            <p class="eyebrow">Realizacje</p>
+            <h2>Przestrzenie, które mówią <em>same za siebie</em></h2>
+            <div class="realizacje__projekty">
+                <div class="realizacje__projekt">
+                    <img src="" alt="" class="realizacje__material">
+                    <img src="" alt="" class="realizacje__wizualizacja">
+                <div class="realizacje__overlay">
+                    <p class="realizacje__tytul">Harmonia form i kolorów</p>
+                    <p class="realizacje__data">Warszawa - 2023</p>
+                </div>
+                </div>
+            </div>
+            <a href="" class="link-akcja">Zobacz wszystkie projekty</a>
+        </section>
         <section class="wspolpraca"></section>
         <section class="faq faq--home"></section>
         <section class="kontakt-form"></section>
