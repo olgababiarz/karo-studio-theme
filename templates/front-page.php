@@ -37,7 +37,7 @@
             <img class="o-mnie__zdjecie" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/k-rozbicka-o-mnie.png' ?>" alt="">
             <div class="o-mnie__tekst">
                 <p class="eyebrow">O mnie</p>
-                <h2>Katarzyna <em>Rozbicka</em></h2>
+                <h2>Katarzyna <br><em>Rozbicka</em></h2>
                 <p class="o-mnie__opis">Od ponad 10 lat tworzę przestrzenie, które stają się naturalnym przedłużeniem osobowości ich właścicieli. Nie interesuje mnie powtarzalność ani ślepe podążanie za trendami — każdy projekt zaczynam od rozmowy, bo tylko tak można stworzyć wnętrze, które naprawdę trwa.</p>
                 <p class="o-mnie__opis">Pracuję kompleksowo — od pierwszego szkicu po nadzór nad realizacją. Moim klientom zapewniam spokój i pewność, że każdy etap jest pod kontrolą.</p>
                 <div class="o-mnie__box-liczby">

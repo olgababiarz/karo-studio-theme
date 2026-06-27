@@ -276,12 +276,52 @@ header {
 
 .o-mnie__divider {
     width: 1px;
-    background-color: var(--tekst-glowny);
+    background-color: var(--kolor-akcent);
     align-self: stretch;
 }
 
 .o-mnie__tekst a {
     margin-top: 10px;
+}
+
+@media (min-width: 1024px){
+    .o-mnie {
+        display: flex;
+        flex-direction: row;
+        max-height: 120vh;
+        overflow: hidden;
+    }
+
+    .o-mnie__zdjecie {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .o-mnie__tekst {
+        width: 50%;
+        gap: 3rem;
+        display: flex;
+        justify-content: space-around;
+        padding-left: 5rem;
+    }
+
+    .eyebrow {
+        font-size: 0.7rem;
+    }
+
+    .o-mnie__opis {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .o-mnie__box-liczby {
+        width: 80%;
+    }
+
+    .o-mnie__liczba {
+        font-size: 1rem;
+    }
 }
 
 .realizacje {
