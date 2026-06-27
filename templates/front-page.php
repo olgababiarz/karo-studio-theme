@@ -64,8 +64,24 @@
             <h2>Przestrzenie, które mówią <em>same za siebie</em></h2>
             <div class="realizacje__projekty">
                 <div class="realizacje__projekt">
-                    <img src="" alt="" class="realizacje__material">
-                    <img src="" alt="" class="realizacje__wizualizacja">
+                    <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/material-projekt1.png' ?>" alt="" class="realizacje__material">
+                    <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/wizualizacja-1.jpg' ?>" alt="" class="realizacje__wizualizacja">
+                <div class="realizacje__overlay">
+                    <p class="realizacje__tytul">Harmonia form i kolorów</p>
+                    <p class="realizacje__data">Warszawa - 2023</p>
+                </div>
+                </div>
+                <div class="realizacje__projekt">
+                    <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/material-projekt2.png' ?>" alt="" class="realizacje__material">
+                    <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/wizualizacja-2.jpg' ?>" alt="" class="realizacje__wizualizacja">
+                <div class="realizacje__overlay">
+                    <p class="realizacje__tytul">Harmonia form i kolorów</p>
+                    <p class="realizacje__data">Warszawa - 2023</p>
+                </div>
+                </div>
+                <div class="realizacje__projekt">
+                    <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/material-projekt3.png' ?>" alt="" class="realizacje__material">
+                    <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/wizualizacja-3.jpeg' ?>" alt="" class="realizacje__wizualizacja">
                 <div class="realizacje__overlay">
                     <p class="realizacje__tytul">Harmonia form i kolorów</p>
                     <p class="realizacje__data">Warszawa - 2023</p>
