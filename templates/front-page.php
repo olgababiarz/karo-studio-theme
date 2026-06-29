@@ -90,7 +90,46 @@
             </div>
             <a href="" class="link-akcja">Zobacz wszystkie projekty</a>
         </section>
-        <section class="wspolpraca"></section>
+        <section class="wspolpraca">
+            <p class="eyebrow">Współpraca</p>
+            <h2>Jak wygląda nasza <em>współpraca</em></h2>
+            <div class="wspolpraca__etapy-tekst">
+                <div class="wspolpraca__etap">
+                    <h3>Projekt koncepcyjny</h3>
+                    <p class="wspolpraca__etap-opis">Moodboardy, wizualizacje 3D i pełny plan układu funkcjonalnego. Ustalamy charakter wnętrza, zanim cokolwiek powstanie na budowie.</p>
+                </div>
+                <div class="wspolpraca__etap">
+                    <h3>Projekt techniczny</h3>
+                    <p class="wspolpraca__etap-opis">Komplet dokumentacji wykonawczej dla ekipy — rysunki techniczne, zestawienia materiałów, specyfikacje. Bez niedopowiedzeń.</p>
+                </div>
+                <div class="wspolpraca__etap">
+                    <h3>Nadzór i realizacja</h3>
+                    <p class="wspolpraca__etap-opis">Jestem na budowie, koordynuję wykonawców i dostawców. Decyzje podejmujemy razem, ale ciężar przenoszę na siebie.</p>
+                </div>
+            </div>
+            <div class="wspolpraca__etapy-box">
+                <div class="wspolpraca__liczby">
+                    <p class="etap__numer">01</p>
+                    <p class="etap__podpis">Rozmowa i brief</p>
+                </div>
+                <div class="wspolpraca__liczby">
+                    <p class="etap__numer"><span class="etap__linia"></span>02</p>
+                    <p class="etap__podpis">Projekt koncepcyjny</p>
+                </div>
+                <div class="wspolpraca__liczby">
+                    <p class="etap__numer"><span class="etap__linia"></span>03</p>
+                    <p class="etap__podpis">Projekt techniczny</p>
+                </div>
+                <div class="wspolpraca__liczby">
+                    <p class="etap__numer"><span class="etap__linia"></span>04</p>
+                    <p class="etap__podpis">Realizacja i nadzór</p>
+                </div>
+            </div>
+            <div class="linki">
+                <a href="" class="link-akcja link-akcja--btn">Porozmawiajmy o Twoim projekcie</a>
+                <a href="" class="link-akcja">Dowiedz się więcej</a>
+            </div>
+        </section>
         <section class="faq faq--home"></section>
         <section class="kontakt-form"></section>
     </main>
