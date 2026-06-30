@@ -130,7 +130,52 @@
                 <a href="" class="link-akcja">Dowiedz się więcej</a>
             </div>
         </section>
-        <section class="faq faq--home"></section>
+        <section class="faq faq--home">
+            <p class="eyebrow">Pytania</p>
+            <h2>Najczęściej zadawane <em>pytania</em></h2>
+            <div class="faq__pytania-box">
+                <div class="faq__pytanie">
+                    <button class="faq__pytanie-naglowek">Jak długo trwa proces projektowania?
+                        <span class="faq__ikona">+</span>
+                    </button>
+                <div class="faq__odpowiedz">
+                    <p>Wykonanie projektu od koncepcji aż do rysunków technicznych zwykle trwa ok. 3-4 miesięcy w zależności od wielkości. Umów się na konsultację, a powiem Ci ile czasu zajmie przygotowanie Twojego projektu.</p>
+                </div>
+                </div>
+                <div class="faq__pytanie">
+                    <button class="faq__pytanie-naglowek">Co muszę przygotować na pierwszą konsultację?
+                        <span class="faq__ikona">+</span>
+                    </button>
+                <div class="faq__odpowiedz">
+                    <p>Nie potrzebujesz nic przygotowywać. Zadam Ci wszystkie potrzebne pytania, które pozwolą poznać mi Twoje potrzeby i oczekiwania do współpracy ze mną.</p>
+                </div>
+                </div>
+                <div class="faq__pytanie">
+                    <button class="faq__pytanie-naglowek">Z jakim wyprzedzeniem należy zgłosić się po projekt?
+                        <span class="faq__ikona">+</span>
+                    </button>
+                <div class="faq__odpowiedz">
+                    <p>Treść odpowiedzi</p>
+                </div>
+                </div>
+                <div class="faq__pytanie">
+                    <button class="faq__pytanie-naglowek">Jaki jest koszt projektu wnętrz?
+                        <span class="faq__ikona">+</span>
+                    </button>
+                <div class="faq__odpowiedz">
+                    <p>Treść odpowiedzi</p>
+                </div>
+                </div>
+                <div class="faq__pytanie">
+                    <button class="faq__pytanie-naglowek">Czy współpracuje Pani z ekipami wykończeniowymi?
+                        <span class="faq__ikona">+</span>
+                    </button>
+                <div class="faq__odpowiedz">
+                    <p>Treść odpowiedzi</p>
+                </div>
+                </div>
+            </div>
+        </section>
         <section class="kontakt-form"></section>
     </main>
 

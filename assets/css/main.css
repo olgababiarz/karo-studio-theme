@@ -495,3 +495,15 @@ header {
         gap: 1.5rem;
     }
 }
+
+.faq {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.faq__odpowiedz {
+    max-height: 0;
+    overflow: hidden;
+}
