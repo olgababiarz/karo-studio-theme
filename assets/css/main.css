@@ -507,3 +507,33 @@ header {
     max-height: 0;
     overflow: hidden;
 }
+
+.faq__pytania-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.faq__pytanie {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq__pytanie-naglowek {
+    display: flex;
+    flex-direction: row;
+    border:none;
+    border-bottom: 1px solid var(--kolor-akcent);
+    width: 100%;
+    padding: 5px;
+    font-family: var(--font-naglowki);
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.faq__ikona {
+    align-self: center;
+    font-size: 1.8rem;
+    color: var(--kolor-akcent);
+}
