@@ -38,3 +38,28 @@ const obserwator = new IntersectionObserver((wpisy) => {
 });
 
 liczniki.forEach((licznik) => obserwator.observe(licznik));
+
+//Akordeon FAQ
+
+const przyciski = document.querySelectorAll('.faq__pytanie-naglowek');
+
+przyciski.forEach(function(przycisk) {
+    przycisk.addEventListener('click', function() {
+        const odpowiedz = przycisk.parentElement.querySelector('.faq__odpowiedz');
+        
+        if (odpowiedz.style.maxHeight === '0px' || odpowiedz.style.maxHeight === '') {
+            odpowiedz.style.maxHeight = '500px';
+        } else {
+            odpowiedz.style.maxHeight = '0px';
+        }
+        
+        const ikona = przycisk.querySelector('.faq__ikona');
+        if (ikona.textContent === '+') {
+            ikona.textContent = '-';
+        } else {
+            ikona.textContent = '+';
+        }
+    });
+});
+
+
