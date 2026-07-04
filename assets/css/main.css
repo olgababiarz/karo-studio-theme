@@ -209,14 +209,18 @@ header {
         background-color: transparent;
         position: fixed;
         right: 0;
+        left: auto;
         top: 50%;
         transform: translateY(-50%);
-        width: auto;
+        width: fit-content;
+        z-index: 100;
     }
 
     .navigation ul {
         align-items: end;
         gap: 30px;
+        width: auto;
+        margin-left: auto;
     } 
 
     .navigation ul li a::before {
@@ -506,6 +510,7 @@ header {
 .faq__odpowiedz {
     max-height: 0;
     overflow: hidden;
+    transition: max-height 0.5s ease;
 }
 
 .faq__pytania-box {
@@ -522,6 +527,7 @@ header {
 .faq__pytanie-naglowek {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     border:none;
     border-bottom: 1px solid var(--kolor-akcent);
     width: 100%;
@@ -534,6 +540,19 @@ header {
 
 .faq__ikona {
     align-self: center;
+    font-family: var(--font-tekst);
     font-size: 1.8rem;
+    font-weight: lighter;
     color: var(--kolor-akcent);
+    
+}
+
+@media (min-width: 1024px) {
+
+    .faq {
+        padding: 3rem 12rem;
+        z-index: 1;
+    }
+
+
 }
