@@ -176,7 +176,26 @@
                 </div>
             </div>
         </section>
-        <section class="kontakt-form"></section>
+        <section class="kontakt-form">
+            <p class="eyebrow">Kontakt</p>
+            <h2 class="kontakt-form__header">Zacznijmy <em>od rozmowy</em></h2>
+            <p class="info">Pierwsze spotkanie jest bezpłatne i niezobowiązujące</p>
+            <form action="" method="post">
+                <label for="user-input">Imię i nazwisko</label>
+                <input type="text" placeholder="Jak się Pan/Pani nazywa" id="user-input" name="username">
+                <label for="user-email">E-mail</label>
+                <input type="email" required placeholder="Ades mailowy" id="user-email" name="email">
+                <label for="user-tel">Telefon</label>
+                <input type="tel" placeholder="Numer telefonu" id="user-tel" name="telephone">
+                <label for="user-message">Wiadomość</label>
+                <textarea placeholder="Opowiedz o swoim wnętrzu i etapie, na którym jesteś" id="user-message" name="message"></textarea>
+                <input type="checkbox" required name="agreement" value="agree" id="user-agreement">
+                <label for="user-agreement">Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z polityką prywatności</label>
+                <button type="submit" class="link-akcja link-akcja--btn">Wyślij</button>
+                <p>lub</p>
+                <a href="" class="link-akcja">Umów bezpłatną konsultację</a>
+            </form>
+        </section>
     </main>
 
     <footer></footer>

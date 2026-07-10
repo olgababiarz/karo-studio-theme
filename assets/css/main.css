@@ -554,3 +554,33 @@ header {
         z-index: 1;
     }
 }
+
+.kontakt-form {
+    background-color: var(--tlo-sekcji-kontrast);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.kontakt-form__header {
+    color: var(--tekst-ciemne-tlo);
+}
+
+.info {
+    color: var(--kolor-akcent);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: var(--font-tekst);
+    color: var(--kolor-akcent);
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid var(--tekst-ciemne-tlo);
+}
