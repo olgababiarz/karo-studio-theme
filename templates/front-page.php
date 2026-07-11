@@ -183,22 +183,43 @@
             <form action="" method="post">
                 <label for="user-input">Imię i nazwisko</label>
                 <input type="text" placeholder="Jak się Pan/Pani nazywa" id="user-input" name="username">
-                <label for="user-email">E-mail</label>
+                <label for="user-email">E-mail<span class="wymagane">*</span></label>
                 <input type="email" required placeholder="Ades mailowy" id="user-email" name="email">
                 <label for="user-tel">Telefon</label>
                 <input type="tel" placeholder="Numer telefonu" id="user-tel" name="telephone">
                 <label for="user-message">Wiadomość</label>
                 <textarea placeholder="Opowiedz o swoim wnętrzu i etapie, na którym jesteś" id="user-message" name="message"></textarea>
-                <input type="checkbox" required name="agreement" value="agree" id="user-agreement">
-                <label for="user-agreement">Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z polityką prywatności</label>
-                <button type="submit" class="link-akcja link-akcja--btn">Wyślij</button>
-                <p>lub</p>
-                <a href="" class="link-akcja">Umów bezpłatną konsultację</a>
+                <div class="kontakt-form__zgoda"><input type="checkbox" required name="agreement" value="agree" id="user-agreement">
+                <label for="user-agreement" class="agreement-text">Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z polityką prywatności<span class="wymagane">*</span></label></div>
+                <button type="submit" class="link-akcja link-akcja--btn kontakt-form__button">Wyślij</button>
             </form>
+                <p class="kontakt-form__dodatki">lub</p>
+                <a href="" class="link-akcja link-akcja--jasny">Umów bezpłatną konsultację</a>
         </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="footer__column">
+            <h4 class="footer__contact-header">KARO Studio - Katarzyna Rozbicka</h4>
+            <address>
+                <p class="address">ul. Zaciszna 22c</p>
+                <p class="address">05-230 Kobyłka</p>
+            </address>
+        </div>
+        <div class="footer__column">
+            <h4 class="footer__contact-header">Kontakt</h4>
+            <address>
+                <a href="tel:506680413">Tel: 506-680-413</a>
+                <a href="mailto:karoz.studio@gmail.com">e-mail: karoz.studio@gmail.com</a>
+            </address>
+        </div>
+        <div class="footer__column footer__column-links">
+            <a href="">Polityka prywatności</a>
+            <a href="">Polityka cookies</a>
+            <a href="https://www.facebook.com/profile.php?id=100090548520092&sk=directory_links" class="footer__social-link"><img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Facebook_Logo_Secondary.png' ?>" alt="Facebook" class="footer__social-icon"></a>
+            <a href="https://www.instagram.com/karo.interiordesign/?utm_source=ig_web_button_share_sheet" class="footer__social-link"><img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Instagram_Glyph_White.png' ?>" alt="Instagram" class="footer__social-icon"></a>
+        </div>
+    </footer>
 <?php wp_footer()?>
 </body>
 </html>
