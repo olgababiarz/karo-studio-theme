@@ -629,7 +629,7 @@ input::placeholder, textarea::placeholder {
     text-align: left;
 }
 
-.kontakt-form__button {
+.link-akcja--btn-jasny {
     color: var(--tekst-ciemne-tlo);
     border-color: var(--tekst-ciemne-tlo);
     font-size: 0.8rem;
@@ -655,6 +655,7 @@ input::placeholder, textarea::placeholder {
 footer {
     background-color: var(--tlo-sekcji-kontrast);
     padding: 3rem;
+    padding-bottom: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

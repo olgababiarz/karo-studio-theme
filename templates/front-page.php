@@ -4,29 +4,7 @@
  */
 ?>
 
-<!DOCTYPE html>
-<html lang="pl-PL">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo wp_get_document_title()?></title>
-    <?php wp_head()?>
-</head>
-<body>
-    <header>
-        <a href=""><img class="header__logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.png' ?>" alt="KARO Studio logo"></a>
-        <nav class="navigation">
-            <?php wp_nav_menu([
-        'theme_location' => 'primary',
-        'container' => false,
-        ]); ?>
-        </nav>
-        <button class="header__hamburger">
-            <span class="header__line"></span>
-            <span class="header__line"></span>
-            <span class="header__line"></span>
-        </button>
-    </header>
+<?php get_header(); ?>
     <main>
         <section class="hero hero--home">
             <h2 class="hero__name">Katarzyna Rozbicka</h2>
@@ -191,39 +169,11 @@
                 <textarea placeholder="Opowiedz o swoim wnętrzu i etapie, na którym jesteś" id="user-message" name="message"></textarea>
                 <div class="kontakt-form__zgoda"><input type="checkbox" required name="agreement" value="agree" id="user-agreement">
                 <label for="user-agreement" class="agreement-text">Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z polityką prywatności<span class="wymagane">*</span></label></div>
-                <button type="submit" class="link-akcja link-akcja--btn kontakt-form__button">Wyślij</button>
+                <button type="submit" class="link-akcja link-akcja--btn link-akcja--btn-jasny">Wyślij</button>
             </form>
                 <p class="kontakt-form__dodatki">lub</p>
                 <a href="" class="link-akcja link-akcja--jasny">Umów bezpłatną konsultację</a>
         </section>
     </main>
 
-    <footer>
-        <div class="footer__column">
-            <div class="footer__name-box">
-                <h4 class="footer__contact-header">KARO Studio</h4>
-                <p class="footer__name">Katarzyna Rozbicka</p>
-            </div>
-            <address>
-                <p class="footer__address-data">ul. Zaciszna 22c</p>
-                <p class="footer__address-data">05-230 Kobyłka</p>
-            </address>
-        </div>
-        <div class="footer__column">
-            <h4 class="footer__contact-header footer__contact-header--second">Kontakt</h4>
-            <address>
-                <a class="footer__address-data" href="tel:506680413">Tel: 506-680-413</a>
-                <a class="footer__address-data" href="mailto:karoz.studio@gmail.com">e-mail: karoz.studio@gmail.com</a>
-            </address>
-        </div>
-        <div class="footer__column footer__column-links">
-            <a href="">Polityka prywatności</a>
-            <a href="">Polityka cookies</a>
-            <a href="https://www.facebook.com/profile.php?id=100090548520092&sk=directory_links" class="footer__social-link"><img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Facebook_Logo_Secondary.png' ?>" alt="Facebook" class="footer__social-icon"></a>
-            <a href="https://www.instagram.com/karo.interiordesign/?utm_source=ig_web_button_share_sheet" class="footer__social-link"><img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Instagram_Glyph_White.png' ?>" alt="Instagram" class="footer__social-icon"></a>
-        </div>
-        <p class="footer__copyright">© 2025 KARO Studio. Wszelkie prawa zastrzeżone.<br>rajo.projekt</p>
-    </footer>
-<?php wp_footer()?>
-</body>
-</html>
+<?php get_footer(); ?>
