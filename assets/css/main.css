@@ -87,7 +87,7 @@ p {
     color: var(--tekst-glowny);
 }
 
-a, .link-akcja {
+a, .link-action {
     font-family: var(--font-tekst);
     font-weight: 400;
     font-size: 1rem;
@@ -97,11 +97,11 @@ a, .link-akcja {
     color: var(--tekst-glowny);
 }
 
-.link-akcja::after {
+.link-action::after {
     content: ' →';
 }
 
-.link-akcja--btn {
+.link-action--btn {
     border: 1px solid var(--kolor-akcent);
     background-color: transparent;
     padding: 10px;
@@ -264,54 +264,54 @@ header {
     }
 }
 
-.o-mnie__zdjecie {
+.about-me__picture {
     width: 100%;
 }
 
-.o-mnie__tekst {
+.about-me__text {
     padding: 3rem;
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
 }
 
-.o-mnie__box-liczby {
+.about-me__box-numbers {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 10px;
 }
 
-.o-mnie__liczba {
+.about-me__number {
     display: inline-block;
     flex: 1;
 }
 
-.o-mnie__divider {
+.about-me__divider {
     width: 1px;
     background-color: var(--kolor-akcent);
     align-self: stretch;
 }
 
-.o-mnie__tekst a {
+.about-me__text a {
     margin-top: 10px;
 }
 
 @media (min-width: 1024px){
-    .o-mnie {
+    .about-me {
         display: flex;
         flex-direction: row;
         max-height: 120vh;
         overflow: hidden;
     }
 
-    .o-mnie__zdjecie {
+    .about-me__picture {
         width: 50%;
         height: 100%;
         object-fit: cover;
     }
 
-    .o-mnie__tekst {
+    .about-me__text {
         width: 50%;
         gap: 3rem;
         display: flex;
@@ -323,41 +323,41 @@ header {
         font-size: 0.7rem;
     }
 
-    .o-mnie__opis {
+    .about-me__description {
         width: 80%;
         font-size: 1rem;
     }
 
-    .o-mnie__box-liczby {
+    .about-me__box-numbers {
         width: 80%;
     }
 
-    .o-mnie__liczba {
+    .about-me__number {
         font-size: 1rem;
     }
 }
 
-.realizacje {
+.works {
     padding: 3rem;
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
 }
 
-.realizacje__projekty {
+.works__projects {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
 }
 
-.realizacje__projekt {
+.works__single-project {
     display: flex;
     flex-direction: row;
     width: 100%;
     position: relative;
 }
 
-.realizacje__overlay {
+.works__overlay {
     position: absolute;
     display: none;
     width: 100%;
@@ -369,23 +369,23 @@ header {
     flex-direction: column;
 }
 
-.realizacje__projekt:hover .realizacje__overlay {
+.works__single-project:hover .works__overlay {
     display: flex;
 }
 
-.realizacje__tytul {
+.works__title {
     font-family: var(--font-naglowki);
     color: var(--tekst-ciemne-tlo);
     line-height: 1.2;
 }
 
-.realizacje__data {
+.works__place-date {
     font-family: var(--font-tekst);
     color: var(--tekst-ciemne-tlo);
     line-height: 1.2;
 }
 
-.realizacje__projekt img {
+.works__single-project img {
     width: 50%;
     height: 25vh;
     object-fit: cover;
@@ -393,36 +393,36 @@ header {
 
 @media (min-width: 1024px){
 
-    .realizacje {
+    .works {
         gap: 2.2rem;
     }
 
-    .realizacje__projekty{
+    .works__projects{
         flex-direction: row;
     }
 }
 
-.wspolpraca {
+.collab {
     padding: 3rem;
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
 }
 
-.wspolpraca__etapy-tekst {
+.collab__stages-text {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
     padding-top: 1rem;
 }
 
-.wspolpraca__etap {
+.collab__stage {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
 }
 
-.wspolpraca__etap h3::before {
+.collab__stage h3::before {
     content: '';
     display: block;
     width: 3rem;
@@ -431,24 +431,24 @@ header {
     margin-bottom: 1.2rem;
 }
 
-.wspolpraca__etapy-box {
+.collab__stages-box {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
 }
 
-.etap__numer {
+.stage__number {
     font-family: var(--font-naglowki);
     font-size: 2rem;
     color: var(--kolor-akcent);
 }
 
-.etap__podpis {
+.stage__text {
     text-transform: uppercase;
     font-size: 0.7rem;
 }
 
-.linki {
+.links {
     display: flex;
     flex-direction: column;
     padding-top: 1rem;
@@ -456,31 +456,31 @@ header {
 }
 
 @media (min-width: 1024px){
-    .wspolpraca__etapy-tekst {
+    .collab__stages-text {
         flex-direction: row;
         flex: 1;
     }
 
-    .wspolpraca__etapy-box {
+    .collab__stages-box {
         flex-direction: row;
         width: 100%;
         padding-top: 1.5rem;
     }
 
-    .wspolpraca__liczby {
+    .collab__numbers {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         flex: 1;
     }
 
-    .etap__numer {
+    .stage__number {
         display: flex;
         align-items: center;
         font-size: 3rem;
     }
 
-    .etap__linia {
+    .stage__line {
         content: '';
         display: flex;
         align-self: center;
@@ -491,16 +491,16 @@ header {
         margin-right: 2rem;
     }
 
-    .etap__podpis {
+    .stage__text {
         font-size: 0.9rem;
         padding-left: 9rem;
     }
 
-    .wspolpraca__liczby:first-child .etap__podpis {
+    .collab__numbers:first-child .stage__text {
         padding-left: 0;
     }
 
-    .linki {
+    .links {
         flex-direction: row;
         align-items: center;
         padding-top: 2rem;
@@ -515,24 +515,24 @@ header {
     gap: 1.2rem;
 }
 
-.faq__odpowiedz {
+.faq__answer {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease;
 }
 
-.faq__pytania-box {
+.faq__question-box {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
 }
 
-.faq__pytanie {
+.faq__question {
     display: flex;
     flex-direction: column;
 }
 
-.faq__pytanie-naglowek {
+.faq__question-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -546,7 +546,7 @@ header {
     text-align: left;
 }
 
-.faq__ikona {
+.faq__icon {
     align-self: center;
     font-family: var(--font-tekst);
     font-size: 1.8rem;
@@ -563,7 +563,7 @@ header {
     }
 }
 
-.kontakt-form {
+.contact-form {
     background-color: var(--tlo-sekcji-kontrast);
     padding: 3rem;
     display: flex;
@@ -572,7 +572,7 @@ header {
     gap: 1.2rem;
 }
 
-.kontakt-form__header {
+.contact-form__header {
     color: var(--tekst-ciemne-tlo);
     text-align: center;
 }
@@ -612,11 +612,11 @@ input::placeholder, textarea::placeholder {
     font-weight: 100;
 }
 
-.wymagane {
+.required {
     color: var(--kolor-akcent);
 }
 
-.kontakt-form__zgoda {
+.contact-form__agreement {
     display:flex;
     align-items: center;
     justify-content: left;
@@ -629,14 +629,14 @@ input::placeholder, textarea::placeholder {
     text-align: left;
 }
 
-.link-akcja--btn-jasny {
+.link-action--btn-light {
     color: var(--tekst-ciemne-tlo);
     border-color: var(--tekst-ciemne-tlo);
     font-size: 0.8rem;
     align-self: center
 }
 
-.kontakt-form__dodatki, .link-akcja--jasny {
+.contact-form__additionals, .link-action--light {
     color: var(--tekst-ciemne-tlo);
     font-size: 0.8rem;
     text-align: center;
@@ -644,9 +644,10 @@ input::placeholder, textarea::placeholder {
 
 @media (min-width: 1024px){
 
-    .kontakt-form {
+    .contact-form {
         gap: 2rem;
     }
+
     form {
         width: 60%;
     }
