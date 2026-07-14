@@ -21,6 +21,13 @@ body {
     color: var(--tekst-glowny);
 }
 
+section {
+    padding: 3rem; 
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
 h1 {
     font-family: var(--font-naglowki);
     font-style: normal;
@@ -56,6 +63,25 @@ h4 {
 h1 em, h2 em {
     font-style: italic;
     color: var(--kolor-akcent);
+}
+
+li {
+    list-style: none;
+    padding-left: 2rem;
+    text-indent: -2rem;
+    margin-bottom: 0.8rem;
+    font-family: var(--font-tekst);
+    font-size: 0.8rem;
+}
+
+li::before {
+    content: '';
+    display: inline-block;
+    width: 1.2rem;
+    height: 1px;
+    background-color: var(--kolor-akcent);
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 .eyebrow {
@@ -180,12 +206,8 @@ header {
     background-size: cover;
     background-position: 22% center;
     height: 90vh;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem; 
-    gap: 20px;
 }
 
 .hero__name {
@@ -264,6 +286,10 @@ header {
     }
 }
 
+.about-me {
+    padding: 0;
+}
+
 .about-me__picture {
     width: 100%;
 }
@@ -299,7 +325,6 @@ header {
 
 @media (min-width: 1024px){
     .about-me {
-        display: flex;
         flex-direction: row;
         max-height: 120vh;
         overflow: hidden;
@@ -335,13 +360,6 @@ header {
     .about-me__number {
         font-size: 1rem;
     }
-}
-
-.works {
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
 }
 
 .works__projects {
@@ -400,13 +418,6 @@ header {
     .works__projects{
         flex-direction: row;
     }
-}
-
-.collab {
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
 }
 
 .collab__stages-text {
@@ -508,13 +519,6 @@ header {
     }
 }
 
-.faq {
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-
 .faq__answer {
     max-height: 0;
     overflow: hidden;
@@ -565,11 +569,7 @@ header {
 
 .contact-form {
     background-color: var(--tlo-sekcji-kontrast);
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 1.2rem;
 }
 
 .contact-form__header {
@@ -744,4 +744,39 @@ footer {
         width: 100%;
         text-align: center;
     }
+}
+
+/* ---  WSPÓŁPRACA  --- */
+
+@media (min-width: 1024px) {
+    .hero--page-collab {
+        padding: 10rem;
+        padding-bottom: 5rem;
+        gap: 1.7rem;
+    }
+
+    .hero__description--page-collab {
+        display: inline-block;
+        width: 75%;
+        font-size: 1.2rem;
+    }
+}
+
+.collab__stage--page-collab {
+    gap: 2rem;
+}
+
+.collab__list-title {
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: var(--tekst-glowny);
+}
+
+.collab__step::before {
+    content: '';
+    display: inline-block;
+    width: 80%;
+    height: 0.5px;
+    background-color: #5c524a;
+    align-self: center;
 }

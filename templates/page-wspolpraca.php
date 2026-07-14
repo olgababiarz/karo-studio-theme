@@ -15,18 +15,18 @@
             <p class="eyebrow">Co dostajesz</p>
             <h2>Trzy etapy, <em>jedna opieka</em></h2>
             <div class="collab__stages-text">
-                <div class="collab__stage">
-                    <h3>Projekt koncepcyjny</h3>
+                <div class="collab__stage collab__stage--page-collab">
+                    <h3 class="collab__list-title">Projekt koncepcyjny</h3>
                     <ul class="collab__stage-list">
                         <li class="collab__list-element">Inwentacyzacja i analiza funkcji</li>
                         <li class="collab__list-element">Moodboard i kierunek stylistyczny</li>
-                        <li class="collab__list-element">Plan układu funkcjonalnego (2–3 warianty)</li>
+                        <li class="collab__list-element">Plan układu funkcjonalnego (2-3 warianty)</li>
                         <li class="collab__list-element">Wizualizacje 3D każdego pomieszczenia</li>
                         <li class="collab__list-element">Wybór materiałów wykończeniowych</li>
                     </ul>
                 </div>
                 <div class="collab__stage">
-                    <h3>Projekt techniczny</h3>
+                    <h3 class="collab__list-title"> Projekt techniczny</h3>
                     <ul class="collab__stage-list">
                         <li class="collab__list-element">Rysunki wykonawcze dla wszystkich branż</li>
                         <li class="collab__list-element">Projekty mebli na wymiar</li>
@@ -36,7 +36,7 @@
                     </ul>
                 </div>
                 <div class="collab__stage">
-                    <h3>Nadzór i realizacja</h3>
+                    <h3 class="collab__list-title">Nadzór i realizacja</h3>
                     <ul class="collab__stage-list">
                         <li class="collab__list-element">Pomoc w wyborze ekipy wykonawczej</li>
                         <li class="collab__list-element">Cotygodniowe wizyty na budowie</li>
