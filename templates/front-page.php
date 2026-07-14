@@ -20,17 +20,17 @@
                 <p class="about-me__description">Pracuję kompleksowo — od pierwszego szkicu po nadzór nad realizacją. Moim klientom zapewniam spokój i pewność, że każdy etap jest pod kontrolą.</p>
                 <div class="about-me__box-numbers">
                     <p class="about-me__number">
-                        <span class="about-me__numer-value" data-target="10">0</span>+ 
+                        <span class="about-me__number-value" data-target="10">0</span>+ 
                         <span class="about-me__number-description">lat praktyki</span>
                     </p>
                     <div class="about-me__divider"></div>
                     <p class="about-me__number">
-                        <span class="about-me__numer-value" data-target="60">0</span>+ 
+                        <span class="about-me__number-value" data-target="60">0</span>+ 
                         <span class="about-me__number-description">zrealizowanych wnętrz</span>
                     </p>
                     <div class="about-me__divider"></div>
                     <p class="about-me__number">
-                        <span class="about-me__numer-value" data-target="100">0</span>% 
+                        <span class="about-me__number-value" data-target="100">0</span>% 
                         <span class="about-me__number-description">autorski nadzór</span>
                     </p>
                 </div>

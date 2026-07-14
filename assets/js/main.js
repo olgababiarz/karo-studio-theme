@@ -9,7 +9,7 @@ hamburger.addEventListener('click', function() {
 });
 
 // Liczniki animowane
-const liczniki = document.querySelectorAll('.o-mnie__liczba-wartosc');
+const liczniki = document.querySelectorAll('.about-me__number-value');
 
 const animujLicznik = (el) => {
     const cel = parseInt(el.getAttribute('data-target'));
@@ -41,11 +41,11 @@ liczniki.forEach((licznik) => obserwator.observe(licznik));
 
 //Akordeon FAQ
 
-const przyciski = document.querySelectorAll('.faq__pytanie-naglowek');
+const przyciski = document.querySelectorAll('.faq__question-header');
 
 przyciski.forEach(function(przycisk) {
     przycisk.addEventListener('click', function() {
-        const odpowiedz = przycisk.parentElement.querySelector('.faq__odpowiedz');
+        const odpowiedz = przycisk.parentElement.querySelector('.faq__answer');
         
         if (odpowiedz.style.maxHeight === '0px' || odpowiedz.style.maxHeight === '') {
             odpowiedz.style.maxHeight = '500px';
@@ -53,7 +53,7 @@ przyciski.forEach(function(przycisk) {
             odpowiedz.style.maxHeight = '0px';
         }
         
-        const ikona = przycisk.querySelector('.faq__ikona');
+        const ikona = przycisk.querySelector('.faq__icon');
         if (ikona.textContent === '+') {
             ikona.textContent = '-';
         } else {
