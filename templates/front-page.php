@@ -154,9 +154,9 @@
                 </div>
             </div>
         </section>
-        <section class="contact-form">
+        <section class="contact-form dark-section">
             <p class="eyebrow">Kontakt</p>
-            <h2 class="contact-form__header">Zacznijmy <em>od rozmowy</em></h2>
+            <h2 class="dark-section__header">Zacznijmy <em>od rozmowy</em></h2>
             <p class="info">Pierwsze spotkanie jest bezpłatne i niezobowiązujące</p>
             <form action="" method="post">
                 <label for="user-input">Imię i nazwisko</label>

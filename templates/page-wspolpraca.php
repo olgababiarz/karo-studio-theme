@@ -14,7 +14,7 @@
         <section class="offer">
             <p class="eyebrow">Co dostajesz</p>
             <h2>Trzy etapy, <em>jedna opieka</em></h2>
-            <div class="collab__stages-text">
+            <div class="collab__stages-text collab__stages-text--offer">
                 <div class="collab__stage collab__stage--page-collab">
                     <h3 class="collab__list-title">Projekt koncepcyjny</h3>
                     <ul class="collab__stage-list">
@@ -25,7 +25,7 @@
                         <li class="collab__list-element">Wybór materiałów wykończeniowych</li>
                     </ul>
                 </div>
-                <div class="collab__stage">
+                <div class="collab__stage collab__stage--page-collab">
                     <h3 class="collab__list-title"> Projekt techniczny</h3>
                     <ul class="collab__stage-list">
                         <li class="collab__list-element">Rysunki wykonawcze dla wszystkich branż</li>
@@ -35,7 +35,7 @@
                         <li class="collab__list-element">Kompletna dokumentacja dla wykonawców</li>
                     </ul>
                 </div>
-                <div class="collab__stage">
+                <div class="collab__stage collab__stage--page-collab">
                     <h3 class="collab__list-title">Nadzór i realizacja</h3>
                     <ul class="collab__stage-list">
                         <li class="collab__list-element">Pomoc w wyborze ekipy wykonawczej</li>
@@ -51,28 +51,28 @@
             <p class="eyebrow">Proces</p>
             <h2>Jak wygląda <em>cała droga</em></h2>
             <div class="collab__step">
-                <p class="stage__number">01</p>
+                <p class="stage__number stage__number--page-collab">01</p>
                 <div class="collab__step-content">
                     <h3>Rozmowa i brief</h3>
                     <p>Bezpłatne spotkanie. Poznajemy się, oglądam wnętrze, słucham. Pytam o styl życia, nawyki, marzenia.</p>
                 </div>
             </div>
             <div class="collab__step">
-                <p class="stage__number">02</p>
+                <p class="stage__number stage__number--page-collab">02</p>
                 <div class="collab__step-content">
                     <h3>Projekt koncepcyjny</h3>
                     <p>4-6 tygodni pracy nad układem, kolorystyką i wizualizacjami. Spotykamy się 2-3 razy, by wybrać kierunek.</p>
                 </div>
             </div>
             <div class="collab__step">
-                <p class="stage__number">03</p>
+                <p class="stage__number stage__number--page-collab">03</p>
                 <div class="collab__step-content">
                     <h3>Projekt techniczny</h3>
                     <p>6-10 tygodni dokumentacji wykonawczej. Każdy detal jest opisany, by ekipa wiedziała dokładnie, co i jak zrobić.</p>
                 </div>
             </div>
             <div class="collab__step">
-                <p class="stage__number">04</p>
+                <p class="stage__number stage__number--page-collab">04</p>
                 <div class="collab__step-content">
                     <h3>Realizacja i nadzór</h3>
                     <p>3-9 miesięcy w zależności od skali. Jestem na budowie regularnie. Pilnuję jakości, terminów i spójności.</p>
@@ -82,18 +82,18 @@
         <section class="testimonials">
             <p class="eyebrow">Opinie</p>
             <h2>Słowa <em>moich klientów</em></h2>
-            <div class="collab__stages-text">
-                <div class="collab__stage">
+            <div class="collab__stages-text collab__stages-text--page-collab">
+                <div class="collab__stage collab__stage--page-collab">
                     <p class="testimonial__content">“Choć to była usługa na odległość, podobała mi się o wiele bardziej niż wcześniejsze doświadczenia z projektantami na miejscu. Pani Kasia to ciepła, miła osoba z ogromną wiedzą, wyczuciem i masą świetnych rozwiązań. A mój projekt? BOSKI! 😍 Łazienka jest niepowtarzalna, przemyślana i z klasą – nie wygląda jak setna kopia z marketowego katalogu.”</p>
                     <p class="testimonial__name">Anna</p>
                     <p class="testimonial__details">Łazienka w mieszkaniu dwupokojowym, Kobyłka</p>
                 </div>
-                <div class="collab__stage">
-                    <p class="testimonial__content">“Polecam współpracę z Panią Kasią. Projekt salonu z jadalnią w segmencie był dużym wyzwaniem ze względu na niewielką przestrzeń, jednak efekt końcowy przerósł nasze oczekiwania. Wnętrze jest funkcjonalne, spójne i optycznie znacznie większe, niż wskazywałby metraż.”</p>
+                <div class="collab__stage collab__stage--page-collab">
+                    <p class="testimonial__content ">“Polecam współpracę z Panią Kasią. Projekt salonu z jadalnią w segmencie był dużym wyzwaniem ze względu na niewielką przestrzeń, jednak efekt końcowy przerósł nasze oczekiwania. Wnętrze jest funkcjonalne, spójne i optycznie znacznie większe, niż wskazywałby metraż.”</p>
                     <p class="testimonial__name">Magdalena</p>
                     <p class="testimonial__details">Segment 110 m2, Warszawa</p>
                 </div>
-                <div class="collab__stage">
+                <div class="collab__stage collab__stage--page-collab">
                     <p class="testimonial__content">“Współpraca z Panią Kasią była bardzo udana. Projekt wnętrza został dopasowany do moich potrzeb, a cały proces przebiegał w miłej i partnerskiej atmosferze.”</p>
                     <p class="testimonial__name">Marlena</p>
                     <p class="testimonial__details">Dom 150 m2, Zielonka</p>
@@ -146,9 +146,9 @@
                 </div>
             </div>
         </section>
-        <section class="cta">
+        <section class="cta dark-section">
             <p class="eyebrow">Zaczynamy?</p>
-            <h2>Pierwsze spotkanie <em>jest bezpłatne</em></h2>
+            <h2 class="dark-section__header">Pierwsze spotkanie <em>jest bezpłatne</em></h2>
             <p class="cta-text">Spokojna rozmowa o Twoim wnętrzu i etapie, na którym jesteś. Bez zobowiązań</p>
             <a href="" class="link-action link-action--btn link-action--btn-light">Umów rozmowę</a>
         </section>
