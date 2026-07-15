@@ -28,6 +28,12 @@ section {
     gap: 1.2rem;
 }
 
+@media (min-width: 1024px) {
+    section {
+        padding: 5rem 8rem;
+    }
+}
+
 h1 {
     font-family: var(--font-naglowki);
     font-style: normal;
@@ -741,7 +747,7 @@ footer {
 
 @media (min-width: 1024px) {
     .hero--page-collab {
-        padding: 10rem;
+        padding: 10rem 15rem;
         padding-bottom: 5rem;
         gap: 1.7rem;
     }
@@ -864,5 +870,34 @@ footer {
     .cta {
         gap: 4rem;
     }
+}
+
+.journey {
+    flex-direction: row;
+    padding: 0;
+}
+
+.process__section, .process__image {
+    flex: 1;
+}
+
+.process__section {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    padding-left: 8rem;
+    gap: 1.2rem;
+}
+
+.process__image img {
+    width: 100%;
+}
+
+.quote {
+    align-items: center;
+}
+
+.quote a {
+    justify-self: center;
 }
 
