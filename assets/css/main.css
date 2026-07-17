@@ -71,6 +71,15 @@ h1 em, h2 em {
     color: var(--kolor-akcent);
 }
 
+blockquote {
+    font-family: var(--font-naglowki);
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--tekst-glowny);
+    text-align: center;
+}
+
 li {
     list-style: none;
     padding-left: 2rem;
@@ -873,20 +882,47 @@ footer {
 }
 
 .journey {
-    flex-direction: row;
+    flex-direction: column;
     padding: 0;
-}
-
-.process__section, .process__image {
-    flex: 1;
 }
 
 .process__section {
     display: flex;
     flex-direction: column;
-    padding: 5rem;
-    padding-left: 8rem;
+    padding: 3rem;
     gap: 1.2rem;
+}
+
+.journey__box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    padding-top: 1.2rem;
+    
+}
+
+.journey__box::before {
+    width: 95%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.journey__box p {
+    display: block;
+}
+
+.step__year {
+    width: 30%;
+    color: var(--kolor-akcent);
+    
+}
+
+.journey__box p:last-child {
+    width: 65%;
 }
 
 .process__image img {
@@ -894,10 +930,54 @@ footer {
 }
 
 .quote {
-    align-items: center;
+    gap: 2.5rem;
+    padding: 6rem 4rem;
 }
 
 .quote a {
-    justify-self: center;
+    align-self: center;
 }
+
+
+@media (min-width:1024px){
+    .journey {
+        flex-direction: row;
+    }
+
+    .journey__text {
+        gap: 0;
+    }
+
+    .journey__text h2, .eyebrow--journey {
+        padding-bottom: 2rem;
+    }
+
+    .journey__box {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .journey__box p {
+        font-size: 1rem;
+    }
+
+    .process__section, .process__image {
+        flex: 1;
+    }
+
+    .process__section {
+        padding: 5rem;
+        padding-left: 8rem;
+    }
+
+    .quote {
+        gap: 5rem;
+        padding: 10rem;
+    }
+
+    blockquote {
+        font-size: 3.5rem;
+    }
+}
+
 

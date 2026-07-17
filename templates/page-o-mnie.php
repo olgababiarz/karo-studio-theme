@@ -37,22 +37,22 @@
             </div>
         </section>
         <section class="process journey">
-            <div class="process__section">
-                <p class="eyebrow">Droga</p>
+            <div class="process__section journey__text">
+                <p class="eyebrow eyebrow--journey">Droga</p>
                 <h2>Doświadczenie <em>i wykształcenie</em></h2>
-                <div class="collab__step">
+                <div class="collab__step journey__box">
                     <p class="step__year">2018</p>
                     <p>Dyplom - Architektura wnętrz, ASP</p>
                 </div>
-                <div class="collab__step">
+                <div class="collab__step journey__box">
                     <p class="step__year">2018-2020</p>
                     <p>Pracownie projektowe w Warszawie</p>
                 </div>
-                <div class="collab__step">
+                <div class="collab__step journey__box">
                     <p class="step__year">2020</p>
                     <p>Założenie KARO Studio</p>
                 </div>
-                <div class="collab__step">
+                <div class="collab__step journey__box">
                     <p class="step__year">2026</p>
                     <p>Ponad 100 zrealizowanych projektów</p>
                 </div>
@@ -62,7 +62,7 @@
             </div>
         </section>
         <section class="quote">
-            <p class="quote__text">„Najlepsze wnętrza powstają wtedy, gdy klient i projektant rozumieją się bez tłumaczenia."</p>
+            <blockquote class="quote__text">„Najlepsze wnętrza powstają wtedy, gdy klient i projektant rozumieją się bez tłumaczenia."</blockquote>
             <a href="" class="link-action link-action--btn">Umów rozmowę</a>
         </section>
 </main>
