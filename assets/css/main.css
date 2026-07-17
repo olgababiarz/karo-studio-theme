@@ -1,12 +1,12 @@
 :root {
-    --tlo-glowne: #F5F0E8;
-    --tekst-glowny: #2A2117;
-    --kolor-akcent: #B8924A;
-    --tlo-sekcji-kontrast: #1c1610;
-    --tekst-ciemne-tlo: #F0EBE0;
-    --font-naglowki: 'Cormorant Garamond';
-    --font-tekst: 'Montserrat';
-    --nakładka: rgba(28, 22, 16, 0.6);
+    --bg-main: #F5F0E8;
+    --text-main: #2A2117;
+    --accent: #B8924A;
+    --bg-dark: #1c1610;
+    --text-light: #F0EBE0;
+    --font-headers: 'Cormorant Garamond';
+    --font-text: 'Montserrat';
+    --overlay: rgba(28, 22, 16, 0.6);
 }
 
 * {
@@ -16,9 +16,9 @@
 }
 
 body {
-    background-color: var(--tlo-glowne);
-    font-family: var(--font-tekst);
-    color: var(--tekst-glowny);
+    background-color: var(--bg-main);
+    font-family: var(--font-text);
+    color: var(--text-main);
 }
 
 section {
@@ -35,48 +35,48 @@ section {
 }
 
 h1 {
-    font-family: var(--font-naglowki);
+    font-family: var(--font-headers);
     font-style: normal;
     font-size: 3.5rem;
     font-weight: 200;
-    color: var(--tekst-glowny);
+    color: var(--text-main);
 }
 
 h2 {
-    font-family: var(--font-naglowki);
+    font-family: var(--font-headers);
     font-style: normal;
     font-size: 2.5rem;
     font-weight: 200;
-    color: var(--tekst-glowny);
+    color: var(--text-main);
 }
 
 h3 {
-    font-family: var(--font-naglowki);
+    font-family: var(--font-headers);
     font-style: normal;
     font-size: 2rem;
     font-weight: 200;
-    color: var(--tekst-glowny);
+    color: var(--text-main);
 }
 
 h4 {
-    font-family: var(--font-naglowki);
+    font-family: var(--font-headers);
     font-style: normal;
     font-size: 1.5rem;
     font-weight: 200;
-    color: var(--tekst-glowny);
+    color: var(--text-main);
 }
 
 h1 em, h2 em {
     font-style: italic;
-    color: var(--kolor-akcent);
+    color: var(--accent);
 }
 
 blockquote {
-    font-family: var(--font-naglowki);
+    font-family: var(--font-headers);
     font-style: italic;
     font-size: 2rem;
     font-weight: 300;
-    color: var(--tekst-glowny);
+    color: var(--text-main);
     text-align: center;
 }
 
@@ -85,16 +85,16 @@ li {
     padding-left: 2rem;
     text-indent: -2rem;
     margin-bottom: 0.8rem;
-    font-family: var(--font-tekst);
+    font-family: var(--font-text);
     font-size: 0.8rem;
 }
 
 .eyebrow {
-    font-family: var(--font-tekst);
+    font-family: var(--font-text);
     font-style: normal;
     font-size: 0.6rem;
     font-weight: 400;
-    color: var(--kolor-akcent);
+    color: var(--accent);
     text-transform: uppercase;
     letter-spacing: 0.25em;
 }
@@ -104,28 +104,28 @@ li {
         display: inline-block;
         height: 1px;
         width: 20px;
-        background-color: var(--kolor-akcent);
+        background-color: var(--accent);
         margin-right: 10px;
         vertical-align: middle;
     }
 
 p {
-    font-family: var(--font-tekst);
+    font-family: var(--font-text);
     font-style: normal;
     font-weight: 300;
     font-size: 0.85rem;
     line-height: 1.9;
-    color: var(--tekst-glowny);
+    color: var(--text-main);
 }
 
 a, .link-action {
-    font-family: var(--font-tekst);
+    font-family: var(--font-text);
     font-weight: 400;
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.18em;
     text-decoration: none;
-    color: var(--tekst-glowny);
+    color: var(--text-main);
 }
 
 .link-action::after {
@@ -133,7 +133,7 @@ a, .link-action {
 }
 
 .link-action--btn {
-    border: 1px solid var(--kolor-akcent);
+    border: 1px solid var(--accent);
     background-color: transparent;
     padding: 10px;
     
@@ -141,17 +141,17 @@ a, .link-action {
 }
 
 button {
-    border: 1px solid var(--kolor-akcent);
+    border: 1px solid var(--accent);
     background-color: transparent;
 }
 
 .dark-section {
-    background-color: var(--tlo-sekcji-kontrast);
+    background-color: var(--bg-dark);
     align-items: center;
 }
 
 .dark-section__header {
-    color: var(--tekst-ciemne-tlo);
+    color: var(--text-light);
     text-align: center;
 }
 
@@ -184,7 +184,7 @@ header {
 }
 
 .header__line {
-    background-color: var(--kolor-akcent);
+    background-color: var(--accent);
     height: 1.5px;
     width: 3rem;
 }
@@ -195,7 +195,7 @@ header {
     top: 4rem;
     left: 0;
     width: 100%;
-    background-color: var(--tlo-glowne);
+    background-color: var(--bg-main);
     padding: 10px;
 }
 
@@ -213,7 +213,7 @@ header {
 
 .navigation ul li a {
     text-decoration: none;
-    color: var(--tekst-glowny);
+    color: var(--text-main);
 }
 
 .hero--home {
@@ -232,14 +232,14 @@ header {
 }
 
 .hero__title {
-    font-family: var(--font-tekst);
+    font-family: var(--font-text);
     text-align: center;
     text-transform: uppercase;
     font-size: 1.3rem;
 }
 
 .hero__description {
-    font-family: var(--font-naglowki);
+    font-family: var(--font-headers);
     font-style: italic;
     font-size: 1.2rem;
 }
@@ -273,27 +273,27 @@ header {
         display: inline-block;
         height: 1px;
         width: 20px;
-        background-color: var(--tekst-glowny);
+        background-color: var(--text-main);
         margin-right: 10px;
         vertical-align: middle;
     }
 
     .navigation ul li.current-menu-item a::before {
         width: 30px;
-        background-color: var(--kolor-akcent);
+        background-color: var(--accent);
     }
 
     .navigation ul li.current-menu-item a {
-        color: var(--kolor-akcent);
+        color: var(--accent);
     }
 
     .navigation ul li a:hover  {
-        color: var(--kolor-akcent);
+        color: var(--accent);
         
     }
 
     .navigation ul li a:hover::before {
-        background-color: var(--kolor-akcent);
+        background-color: var(--accent);
     }
 
     .hero--home {
@@ -330,7 +330,7 @@ header {
 
 .about-me__divider {
     width: 1px;
-    background-color: var(--kolor-akcent);
+    background-color: var(--accent);
     align-self: stretch;
 }
 
@@ -407,14 +407,14 @@ header {
 }
 
 .works__title {
-    font-family: var(--font-naglowki);
-    color: var(--tekst-ciemne-tlo);
+    font-family: var(--font-headers);
+    color: var(--text-light);
     line-height: 1.2;
 }
 
 .works__place-date {
-    font-family: var(--font-tekst);
-    color: var(--tekst-ciemne-tlo);
+    font-family: var(--font-text);
+    color: var(--text-light);
     line-height: 1.2;
 }
 
@@ -454,7 +454,7 @@ header {
     display: block;
     width: 3rem;
     height: 1px;
-    background-color: var(--kolor-akcent);
+    background-color: var(--accent);
     margin-bottom: 1.2rem;
 }
 
@@ -465,9 +465,9 @@ header {
 }
 
 .stage__number {
-    font-family: var(--font-naglowki);
+    font-family: var(--font-headers);
     font-size: 2rem;
-    color: var(--kolor-akcent);
+    color: var(--accent);
 }
 
 .stage__text {
@@ -513,7 +513,7 @@ header {
         align-self: center;
         width: 7rem;
         height: 0.8px;
-        background-color: var(--kolor-akcent);
+        background-color: var(--accent);
         flex: 1;
         margin-right: 2rem;
     }
@@ -557,10 +557,10 @@ header {
     flex-direction: row;
     justify-content: space-between;
     border:none;
-    border-bottom: 1px solid var(--kolor-akcent);
+    border-bottom: 1px solid var(--accent);
     width: 100%;
     padding: 5px;
-    font-family: var(--font-naglowki);
+    font-family: var(--font-headers);
     font-size: 1rem;
     text-transform: uppercase;
     text-align: left;
@@ -568,10 +568,10 @@ header {
 
 .faq__icon {
     align-self: center;
-    font-family: var(--font-tekst);
+    font-family: var(--font-text);
     font-size: 1.8rem;
     font-weight: lighter;
-    color: var(--kolor-akcent);
+    color: var(--accent);
     
 }
 
@@ -584,7 +584,7 @@ header {
 }
 
 .info {
-    color: var(--kolor-akcent);
+    color: var(--accent);
     text-transform: uppercase;
     font-size: 0.8rem;
     text-align: center;
@@ -598,28 +598,28 @@ form {
 }
 
 label {
-    font-family: var(--font-tekst);
-    color: var(--kolor-akcent);
+    font-family: var(--font-text);
+    color: var(--accent);
    
     text-align: center;
 }
 
 input, textarea {
     border: none;
-    border-bottom: 1px solid var(--tekst-ciemne-tlo);
+    border-bottom: 1px solid var(--text-light);
     background-color: transparent;
     padding: 0.5rem;
     width: auto;
 }
 
 input::placeholder, textarea::placeholder {
-    color: var(--tekst-ciemne-tlo);
-    font-family: var(--font-tekst);
+    color: var(--text-light);
+    font-family: var(--font-text);
     font-weight: 100;
 }
 
 .required {
-    color: var(--kolor-akcent);
+    color: var(--accent);
 }
 
 .contact-form__agreement {
@@ -636,14 +636,14 @@ input::placeholder, textarea::placeholder {
 }
 
 .link-action--btn-light {
-    color: var(--tekst-ciemne-tlo);
-    border-color: var(--tekst-ciemne-tlo);
+    color: var(--text-light);
+    border-color: var(--text-light);
     font-size: 0.8rem;
     align-self: center
 }
 
 .contact-form__additionals, .link-action--light {
-    color: var(--tekst-ciemne-tlo);
+    color: var(--text-light);
     font-size: 0.8rem;
     text-align: center;
 }
@@ -660,14 +660,14 @@ input::placeholder, textarea::placeholder {
 }
 
 footer {
-    background-color: var(--tlo-sekcji-kontrast);
+    background-color: var(--bg-dark);
     padding: 3rem;
     padding-bottom: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1.2rem;
-    border-top: 0.5px solid var(--kolor-akcent);
+    border-top: 0.5px solid var(--accent);
 }
 
 .footer__column {
@@ -679,7 +679,7 @@ footer {
 .footer__contact-header {
     font-size: 1.3rem;
     font-weight: 300;
-    color: var(--tekst-ciemne-tlo);
+    color: var(--text-light);
 }
 
 .footer__contact-header--second {
@@ -688,20 +688,20 @@ footer {
 }
 
 .footer__name {
-    font-family: var(--font-tekst);
+    font-family: var(--font-text);
     text-transform: uppercase;
-    color: var(--kolor-akcent);
+    color: var(--accent);
 }
 
 .footer__address-data {
-    font-family: var(--font-tekst);
+    font-family: var(--font-text);
     font-style: normal;
     font-weight: 300;
     font-size: 0.8rem;
     line-height: 1.9;
     text-decoration: none;
     text-transform: none;
-    color: var(--tekst-ciemne-tlo);
+    color: var(--text-light);
     display: block;
 }
 
@@ -714,14 +714,14 @@ footer {
 
 .footer__column-links a {
     width: 100%;
-    font-family: var(--font-tekst);
+    font-family: var(--font-text);
     font-style: normal;
     font-weight: 300;
     font-size: 0.85rem;
     line-height: 1.2;
     text-decoration: none;
     text-transform: none;
-    color: var(--tekst-ciemne-tlo);
+    color: var(--text-light);
 }
 
 .footer__column-links .footer__social-link {
@@ -735,8 +735,8 @@ footer {
 }
 
 .footer__copyright {
-    font-family: var(--font-tekst);
-    color: var(--tekst-ciemne-tlo);
+    font-family: var(--font-text);
+    color: var(--text-light);
 }
 
 @media (min-width: 1024px) {
@@ -775,7 +775,7 @@ footer {
 .collab__list-title {
     font-size: 1.8rem;
     font-weight: 200;
-    color: var(--tekst-glowny);
+    color: var(--text-main);
 }
 
 .collab__list-element::before {
@@ -783,7 +783,7 @@ footer {
     display: inline-block;
     width: 1.2rem;
     height: 1px;
-    background-color: var(--kolor-akcent);
+    background-color: var(--accent);
     margin-right: 10px;
     vertical-align: middle;
 }
@@ -846,7 +846,7 @@ footer {
 }
 
 .testimonial__content {
-    font-family: var(--font-naglowki);
+    font-family: var(--font-headers);
     font-size: 1rem;
     font-style: italic;
     margin-bottom: 1rem;
@@ -872,7 +872,7 @@ footer {
 }
 
 .cta-text {
-    color: var(--tekst-ciemne-tlo);
+    color: var(--text-light);
 }
 
 @media (min-width: 1024px) {
@@ -917,7 +917,7 @@ footer {
 
 .step__year {
     width: 30%;
-    color: var(--kolor-akcent);
+    color: var(--accent);
     
 }
 
