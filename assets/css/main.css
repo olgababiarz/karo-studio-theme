@@ -980,4 +980,35 @@ footer {
     }
 }
 
+/* KONTAKT */
+
+.hero--contact {
+    gap: 2rem;
+}
+
+.message {
+    padding: 0;
+}
+
+.message__contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 1.2rem;
+}
+
+.message__contact-form form button {
+    margin-top: 1.2rem;
+}
+
+.message__contact-data {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.address-data--contact {
+    color: var(--text-main);
+}
+
 

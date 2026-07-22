@@ -38,9 +38,9 @@
                 <p class="contact-data__localization">Kobyłka</p>
                     <address>
                         <p class="contact-data__tel">Telefon</p>
-                        <a class="footer__address-data" href="tel:506680413">Tel: 506-680-413</a>
+                        <a class="footer__address-data address-data--contact" href="tel:506680413">Tel: 506-680-413</a>
                         <p class="contact-data__e-mail">E-mail</p>
-                        <a class="footer__address-data" href="mailto:karoz.studio@gmail.com">e-mail: karoz.studio@gmail.com</a>
+                        <a class="footer__address-data address-data--contact" href="mailto:karoz.studio@gmail.com">e-mail: karoz.studio@gmail.com</a>
                     </address>
                     <p class="contact-data__hours">Godziny pracy</p>
                     <p class="contact-data__working-hours">Pon.-Pt.: 9:00-17:00</p>
