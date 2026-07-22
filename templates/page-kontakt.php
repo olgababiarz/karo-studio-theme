@@ -8,8 +8,8 @@
     <main>
         <section class="hero hero--contact">
             <p class="eyebrow">Kontakt</p>
-            <h2>Zacznijmy <em>od rozmowy</em></h2>
-            <p class="contact__text">Pierwsze spotkanie jest bezpłatne i niezobowiązujące. Możemy zobaczyć się u Ciebie, w studio, albo online - jak Ci wygodniej</p>
+            <h1>Zacznijmy <em>od rozmowy</em></h1>
+            <p class="contact__text">Pierwsze spotkanie jest bezpłatne i niezobowiązujące.<br>Możemy zobaczyć się u Ciebie, w studio, albo online - jak Ci wygodniej</p>
             <a href="" class="link-action link-action--btn">Umów spotkanie</a>
         </section>
         <section class="message">
@@ -33,19 +33,20 @@
                     <a href="" class="link-action link-action--light">Umów bezpłatną konsultację</a>
             </div>
             <div class="message__contact-data">
-                <p class="eyebrow">Napisz</p>
-                <h2>Karo Studio</h2>
+                <p class="eyebrow">Dane kontaktowe</p>
+                <h2 class="contact-data__name">Karo Studio</h2>
                 <p class="contact-data__localization">Kobyłka</p>
-                    <address>
-                        <p class="contact-data__tel">Telefon</p>
-                        <a class="footer__address-data address-data--contact" href="tel:506680413">Tel: 506-680-413</a>
-                        <p class="contact-data__e-mail">E-mail</p>
-                        <a class="footer__address-data address-data--contact" href="mailto:karoz.studio@gmail.com">e-mail: karoz.studio@gmail.com</a>
+                    <address class="contact-data__address">
+                        <p class="contact-data__tel">Telefon:</p>
+                        <a class="footer__address-data address-data--contact" href="tel:506680413">506-680-413</a>
+                        <p class="contact-data__e-mail">E-mail:</p>
+                        <a class="footer__address-data address-data--contact" href="mailto:karoz.studio@gmail.com">karoz.studio@gmail.com</a>
                     </address>
                     <p class="contact-data__hours">Godziny pracy</p>
                     <p class="contact-data__working-hours">Pon.-Pt.: 9:00-17:00</p>
                     <p class="contact-data__additionals">Spotkania na budowie po wcześniejszym umówieniu</p>
-                    <p class="eyebrow">Lokalizacja</p>
+                    <p class="eyebrow eyebrow-map">Lokalizacja</p>
+                    <iframe class="contact-data__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2437.143520311254!2d21.216406499999998!3d52.3496822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x646ba109732c7fdb%3A0xed6261ee4338c487!2sKaro%20Studio%20Projektowania%20Wn%C4%99trz!5e0!3m2!1spl!2spl!4v1784751478781!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
         </section>
 </main>

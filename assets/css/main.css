@@ -1011,4 +1011,52 @@ footer {
     color: var(--text-main);
 }
 
+.contact-data__name, .contact-data__address, .contact-data__hours, .eyebrow-map {
+    margin-top: 1.2rem;
+}
+
+.contact-data__localization {
+    text-transform: uppercase;
+}
+
+.contact-data__map {
+    width: 100%;
+    height: 15rem;
+    margin-top: 1.2rem;
+
+}
+
+@media (min-width: 1024px) {
+
+    .hero--contact {
+        gap: 2.2rem;
+        padding: 6rem 15rem;
+    }
+
+    .contact__text {
+        width: 60%;
+        font-size: 1rem;
+    }
+
+    .message {
+        flex-direction: row;
+    }
+
+    .message__contact-form, .message__contact-data{
+        flex: 1;
+    }
+
+    .message__contact-data {
+        padding: 3rem 4rem;
+    }
+
+    .contact-data__address, .contact-data__hours, .eyebrow-map {
+        margin-top: 2rem;
+    }
+
+    .contact-data__tel, .address-data--contact, .contact-data__e-mail, .contact-data__hours, .contact-data__working-hours {
+        font-size: 1rem;
+    }
+}
+
 
