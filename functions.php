@@ -13,9 +13,28 @@ function karo_enqueue_scripts(){
 
 add_action ('wp_enqueue_scripts', 'karo_enqueue_scripts');
 
-function karo_register_menus() {
+function karo_register_menus(){
     register_nav_menus([
         'primary' => 'Menu główne'
     ]);
 }
 add_action('init', 'karo_register_menus');
+
+function karo_theme_setup(){
+    add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'karo_theme_setup');
+
+function karo_register_project(){
+    register_post_type('project', [
+        'labels' => [
+        'name' => 'Projekty',
+        'add_new_item' => 'Dodaj nowy projekt',
+        ],
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-portfolio',
+        'supports' => ['title', 'editor', 'thumbnail'],
+    ]);
+}
+add_action('init', 'karo_register_project');
