@@ -20,6 +20,36 @@
                 <a href="">Sypialnie</a>
             </nav>
             <div class="projects__cards-box">
+                <?php
+                $projekty = new WP_Query([
+                    'post_type'      => 'project',
+                    'posts_per_page' => -1,
+                ]);
+
+                if ($projekty->have_posts()) :
+                    while ($projekty->have_posts()) : $projekty->the_post();
+
+                        $orientacja  = get_post_meta(get_the_ID(), 'karo_orientacja', true);
+                        $lokalizacja = get_post_meta(get_the_ID(), 'karo_lokalizacja', true);
+                        $rok         = get_post_meta(get_the_ID(), 'karo_rok', true);
+                        if (!$orientacja) $orientacja = 'wide';
+                ?>
+                    <div class="cards-box__project cards-box__project--<?php echo esc_attr($orientacja); ?>">
+                        <a href="<?php the_permalink(); ?>" tabindex="-1" aria-hidden="true">
+                            <?php the_post_thumbnail('large', ['class' => 'project__image']); ?>
+                        </a>
+                        <p class="project__label"><?php echo esc_html($lokalizacja); ?><?php if ($rok) echo ' ' . esc_html($rok); ?></p>
+                        <h3 class="project__title"><?php the_title(); ?></h3>
+                        <p class="project__description"><?php echo esc_html(get_the_excerpt()); ?></p>
+                        <a href="<?php the_permalink(); ?>" class="link-action project__btn">Zobacz projekt</a>
+                    </div>
+                <?php
+                    endwhile;
+                    wp_reset_postdata();
+                endif;
+                ?>
+            </div>
+            <div class="projects__cards-box">
                 <div class="cards-box__project cards-box__project--tall">
                     <a href="" tabindex="-1" aria-hidden="true">
                         <img class="project__image" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/7.png' ?>" alt="">
