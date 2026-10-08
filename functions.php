@@ -68,6 +68,7 @@ function karo_project_metabox_html($post) {
     $proces_tekst    = get_post_meta($post->ID, 'karo_proces_tekst', true);
     $orientacja      = get_post_meta($post->ID, 'karo_orientacja', true);
     $material_id     = get_post_meta($post->ID, 'karo_material_id', true);
+    $wyrozniony = get_post_meta($post->ID, 'karo_wyrozniony', true);
 
     // pole bezpieczeństwa
     wp_nonce_field('karo_zapis_metabox', 'karo_metabox_nonce');
@@ -128,6 +129,12 @@ function karo_project_metabox_html($post) {
         <button type="button" class="button" id="karo_material_wybierz">Wybierz zdjęcie</button>
         <button type="button" class="button" id="karo_material_usun" style="display:<?php echo $material_id ? 'inline-block' : 'none'; ?>;">Usuń</button>
     </p>
+    <p>
+        <label>
+            <input type="checkbox" name="karo_wyrozniony" value="1" <?php checked($wyrozniony, '1'); ?>>
+            <strong>Pokaż na stronie głównej</strong> (sekcja Realizacje)
+        </label>
+    </p>
     <script>
     jQuery(function($){
         var ramka;
@@ -182,6 +189,8 @@ function karo_zapis_metabox($post_id) {
             update_post_meta($post_id, $pole, sanitize_text_field($_POST[$pole]));
         }
     }
+    // checkbox: wyróżniony
+    update_post_meta($post_id, 'karo_wyrozniony', isset($_POST['karo_wyrozniony']) ? '1' : '');
 }
 add_action('save_post_project', 'karo_zapis_metabox');
 
