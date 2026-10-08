@@ -1127,3 +1127,161 @@ footer {
     }
 }
 
+
+/* === STRONA POJEDYNCZEGO PROJEKTU === */
+
+/* HERO */
+.project-hero {
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.project-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(28,22,16,0.75), rgba(28,22,16,0.1));
+}
+
+.project-hero__content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.project-hero__title {
+    color: var(--text-light);
+}
+
+.project-hero__meta {
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.8rem;
+}
+
+.project-hero .eyebrow {
+    color: var(--text-light);
+}
+
+/* OPIS + KARTA SZCZEGÓŁÓW */
+.project-details__heading {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.project-details__card {
+    background-color: #ebe4d8;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.project-details__label {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.65rem;
+    color: var(--accent);
+    margin-top: 1rem;
+}
+
+.project-details__label:first-child {
+    margin-top: 0;
+}
+
+.project-details__value {
+    font-size: 0.95rem;
+}
+
+/* PROCES */
+.project-process__heading {
+    font-style: italic;
+    margin: 0.5rem 0 1.5rem;
+}
+
+/* NAWIGACJA MIĘDZY PROJEKTAMI */
+.project-nav {
+    padding: 0;
+    gap: 0;
+}
+
+.project-nav__link {
+    position: relative;
+    min-height: 220px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    text-decoration: none;
+}
+
+.project-nav__link::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--overlay);
+}
+
+.project-nav__link--next {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.project-nav__overlay {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.project-nav__eyebrow {
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.7rem;
+}
+
+.project-nav__title {
+    color: var(--text-light);
+    font-family: var(--font-headers);
+    font-size: 1.8rem;
+}
+
+/* --- DESKTOP --- */
+@media (min-width: 1024px) {
+    .project-details {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 4rem;
+    }
+
+    .project-details__text {
+        flex: 2;
+    }
+
+    .project-details__card {
+        flex: 1;
+    }
+
+    .project-process {
+        max-width: 60%;
+    }
+
+    .project-nav {
+        flex-direction: row;
+    }
+
+    .project-nav__link {
+        flex: 1;
+        min-height: 300px;
+    }
+}
+
