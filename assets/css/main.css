@@ -1207,39 +1207,21 @@ footer {
 
 /* NAWIGACJA MIĘDZY PROJEKTAMI */
 .project-nav {
-    padding: 0;
-    gap: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
 }
 
 .project-nav__link {
-    position: relative;
-    min-height: 220px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 2rem;
-    text-decoration: none;
-}
-
-.project-nav__link::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: var(--overlay);
-}
-
-.project-nav__link--next {
-    justify-content: flex-end;
-    text-align: right;
-}
-
-.project-nav__overlay {
-    position: relative;
-    z-index: 1;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    text-decoration: none;
+}
+
+.project-nav__link--next {
+    text-align: right;
 }
 
 .project-nav__eyebrow {
@@ -1250,9 +1232,14 @@ footer {
 }
 
 .project-nav__title {
-    color: var(--text-light);
+    color: var(--text-main);
     font-family: var(--font-headers);
-    font-size: 1.8rem;
+    font-size: 1.3rem;
+    max-width: 40%;
+}
+
+.project-nav__link--next .project-nav__title {
+    margin-left: auto;
 }
 
 /* --- DESKTOP --- */
@@ -1276,12 +1263,9 @@ footer {
     }
 
     .project-nav {
-        flex-direction: row;
-    }
-
-    .project-nav__link {
-        flex: 1;
-        min-height: 300px;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 3rem 8rem;
     }
 }
 

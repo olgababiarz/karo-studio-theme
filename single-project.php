@@ -87,22 +87,16 @@
         ?>
 
         <?php if ($poprzedni) : ?>
-            <a class="project-nav__link project-nav__link--prev" href="<?php echo get_permalink($poprzedni->ID); ?>"
-               style="background-image: url('<?php echo esc_url(get_the_post_thumbnail_url($poprzedni->ID, 'large')); ?>');">
-                <span class="project-nav__overlay">
+            <a class="project-nav__link project-nav__link--prev" href="<?php echo get_permalink($poprzedni->ID); ?>">
                     <span class="project-nav__eyebrow">← Poprzedni projekt</span>
                     <span class="project-nav__title"><?php echo esc_html(get_the_title($poprzedni->ID)); ?></span>
-                </span>
             </a>
         <?php endif; ?>
 
         <?php if ($nastepny) : ?>
-            <a class="project-nav__link project-nav__link--next" href="<?php echo get_permalink($nastepny->ID); ?>"
-               style="background-image: url('<?php echo esc_url(get_the_post_thumbnail_url($nastepny->ID, 'large')); ?>');">
-                <span class="project-nav__overlay">
+            <a class="project-nav__link project-nav__link--next" href="<?php echo get_permalink($nastepny->ID); ?>">
                     <span class="project-nav__eyebrow">Następny projekt →</span>
                     <span class="project-nav__title"><?php echo esc_html(get_the_title($nastepny->ID)); ?></span>
-                </span>
             </a>
         <?php endif; ?>
     </nav>
