@@ -62,7 +62,21 @@
         </aside>
     </section>
 
-    <!-- GALERIA — do zrobienia później -->
+    <!-- GALERIA -->
+    <?php
+    $galeria = get_post_meta(get_the_ID(), 'karo_galeria', true);
+    if ($galeria) :
+        $ids = explode(',', $galeria);
+    ?>
+    <section class="project-gallery">
+        <?php foreach ($ids as $id) :
+            $url = wp_get_attachment_image_url($id, 'large');
+            if ($url) :
+        ?>
+            <img class="project-gallery__image" src="<?php echo esc_url($url); ?>" alt="">
+        <?php endif; endforeach; ?>
+    </section>
+    <?php endif; ?>
 
     <!-- PROCES -->
     <?php if ($proces_naglowek || $proces_tekst) : ?>

@@ -69,6 +69,7 @@ function karo_project_metabox_html($post) {
     $orientacja      = get_post_meta($post->ID, 'karo_orientacja', true);
     $material_id     = get_post_meta($post->ID, 'karo_material_id', true);
     $wyrozniony = get_post_meta($post->ID, 'karo_wyrozniony', true);
+    $galeria = get_post_meta($post->ID, 'karo_galeria', true);
 
     // pole bezpieczeństwa
     wp_nonce_field('karo_zapis_metabox', 'karo_metabox_nonce');
@@ -158,6 +159,65 @@ function karo_project_metabox_html($post) {
         });
     });
     </script>
+    <hr>
+    <p><strong>Galeria zdjęć</strong></p>
+    <ul id="karo_galeria_lista" style="display:flex; flex-wrap:wrap; gap:8px; list-style:none; margin:0; padding:0;">
+        <?php
+        if ($galeria) {
+            $ids = explode(',', $galeria);
+            foreach ($ids as $id) {
+                $url = wp_get_attachment_image_url($id, 'thumbnail');
+                if ($url) {
+                    echo '<li data-id="' . esc_attr($id) . '" style="position:relative;">';
+                    echo '<img src="' . esc_url($url) . '" style="width:80px; height:80px; object-fit:cover; display:block;">';
+                    echo '<button type="button" class="karo_usun_zdjecie" style="position:absolute; top:0; right:0; background:#c00; color:#fff; border:none; cursor:pointer; width:20px; height:20px;">×</button>';
+                    echo '</li>';
+                }
+            }
+        }
+        ?>
+    </ul>
+    <input type="hidden" id="karo_galeria" name="karo_galeria" value="<?php echo esc_attr($galeria); ?>">
+    <button type="button" class="button" id="karo_galeria_dodaj">Dodaj zdjęcia</button>
+
+    <script>
+    jQuery(function($){
+        var ramkaGaleria;
+
+        function aktualizujGalerie() {
+            var ids = [];
+            $('#karo_galeria_lista li').each(function(){
+                ids.push($(this).data('id'));
+            });
+            $('#karo_galeria').val(ids.join(','));
+        }
+
+        $('#karo_galeria_dodaj').on('click', function(e){
+            e.preventDefault();
+            ramkaGaleria = wp.media({ title: 'Wybierz zdjęcia', multiple: true });
+            ramkaGaleria.on('select', function(){
+                var wybrane = ramkaGaleria.state().get('selection').toJSON();
+                wybrane.forEach(function(zal){
+                    var miniatura = (zal.sizes && zal.sizes.thumbnail) ? zal.sizes.thumbnail.url : zal.url;
+                    $('#karo_galeria_lista').append(
+                        '<li data-id="' + zal.id + '" style="position:relative;">' +
+                        '<img src="' + miniatura + '" style="width:80px; height:80px; object-fit:cover; display:block;">' +
+                        '<button type="button" class="karo_usun_zdjecie" style="position:absolute; top:0; right:0; background:#c00; color:#fff; border:none; cursor:pointer; width:20px; height:20px;">×</button>' +
+                        '</li>'
+                    );
+                });
+                aktualizujGalerie();
+            });
+            ramkaGaleria.open();
+        });
+
+        $('#karo_galeria_lista').on('click', '.karo_usun_zdjecie', function(e){
+            e.preventDefault();
+            $(this).closest('li').remove();
+            aktualizujGalerie();
+        });
+    });
+    </script>
     <?php
 }
 
@@ -182,6 +242,7 @@ function karo_zapis_metabox($post_id) {
         'karo_proces_tekst',
         'karo_orientacja',
         'karo_material_id',
+        'karo_galeria',
     ];
 
     foreach ($pola as $pole) {
